@@ -39,7 +39,7 @@ from smtplib import SMTPAuthenticationError, SMTPDataError
 
 class Email:
 
-    def __init__(self, smtp_server, port, destinatarios, remetente_email, assunto, remetente_password, texto, path_assinatura=None, path_anexo=None, **kwargs):
+    def __init__(self, smtp_server, port, destinatarios, remetente_email, assunto, remetente_password, texto, path_assinatura=None, path_anexo=[], **kwargs):
         self.smtp_server = smtp_server
         self.port = port
         self.destinatarios = destinatarios
